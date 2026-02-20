@@ -1,0 +1,4 @@
+baudrate=19200
+parity=even
+slaveaddress=50
+stopbit=1
