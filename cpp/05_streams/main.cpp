@@ -1,6 +1,7 @@
 #include <iostream>
 #include "io_redirection.cpp"
 #include "stringstream_uart.cpp"
+#include "vectors.cpp"
 
 
 int main(int argc, char* argv[]){
@@ -47,8 +48,9 @@ int main(int argc, char* argv[]){
     // convert c-string to cpp string
     // std::string args(argv[0])
 
-    test_cuart_config(argc, argv);
+    //test_cuart_config(argc, argv);
 
+    test_cmatrix();
 
     return 0;
 }
