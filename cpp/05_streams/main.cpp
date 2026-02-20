@@ -2,6 +2,7 @@
 #include "io_redirection.cpp"
 #include "stringstream_uart.cpp"
 #include "vectors.cpp"
+#include "serialization.cpp"
 
 
 int main(int argc, char* argv[]){
@@ -50,7 +51,9 @@ int main(int argc, char* argv[]){
 
     //test_cuart_config(argc, argv);
 
-    test_cmatrix();
+    //test_cmatrix();
+
+    test_serializable_main();
 
     return 0;
 }
