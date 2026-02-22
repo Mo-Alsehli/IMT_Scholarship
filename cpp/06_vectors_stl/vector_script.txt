@@ -1,0 +1,7 @@
+create 10 20 30 40 50
+insert 100@5
+erase 2
+append 200
+read 0
+write 5@0
+show
