@@ -37,6 +37,4 @@ int main() {
     show_car_history("ABC123");
 
     show_daily_report();
-
-
 }
