@@ -1,0 +1,18 @@
+section .data
+    msg db "Hello from syscall!", 10
+    len equ $ - msg
+
+section .text
+    global _start_
+
+_start:
+
+    mov rax, 1          ; syscall number (write)
+    mov rdi, 1          ; fd = stdout
+    mov rsi, msg        ; address of message
+    mov rdx, len        ; length
+    syscall             ; invoke kernel
+
+    mov rax, 60         ; syscall number (exit)
+    xor rdi, rdi        ; status = 0
+    syscall
